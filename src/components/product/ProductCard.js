@@ -26,7 +26,7 @@ export const ProductCard = ({
   brand,
   price,
   image,
-  avarageRating,
+  averageRating,
   product,
 }) => {
   const userInfo = useUserInfo();
@@ -79,7 +79,7 @@ export const ProductCard = ({
         </Link>
         <CardActions>
           <Rating 
-            value={avarageRating}
+            value={averageRating}
             disabled={!userInfo}
             onChange={onRatingChange}
           />
